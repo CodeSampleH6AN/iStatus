@@ -1,0 +1,104 @@
+body {
+    color: #353535;
+    font-family: verdana;
+    background: #fed25a;
+    text-align: center;
+    user-select: none;
+    overflow: visible;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* NAVBAR */
+
+.navbar {
+    overflow: hidden;
+    background-color: #353535;
+    position: absolute;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+    color: #fed25a;
+    margin-top: 0;
+    font-family: consolas;
+    font-size: 1.75em;
+}
+
+.img-main {
+    position: relative;
+    top: 8px;
+    margin-right: 2px;
+    visibility: visible;
+}
+
+#clear {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+/* INPUT */
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0 auto;
+}
+
+.enjoy-input {
+    background: transparent;
+    border: transparent;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    font-size: 1em;
+    font-weight: 600;
+    color: #353535;
+    outline: none;
+}
+.enjoy-input-2 {
+    background: transparent;
+    border: transparent;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    font-size: 1em;
+    font-weight: 600;
+    color: #353535;
+    outline: 1px solid #353535;
+    padding: 8px 2px;
+    max-width: 136px;
+}
+.enjoy-input-3 {
+    background: transparent;
+    border: transparent;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    font-size: 0.85em;
+    font-weight: 700;
+    color: #353535;
+    outline: 1px solid #353535;
+    padding: 8px 2px;
+    max-width: 136px;
+    margin-bottom:4px;
+}
+
+button {
+    cursor: pointer;
+    border: transparent;
+    background: transparent;
+    outline: none;
+}
+label {margin: 10px;}
+/* CONTAINER */
+.container-1 {display: flex;align-items: center;}
+.container-2 {display: flex;align-items: center;}
+.pos-1{position:absolute; left:50%;transform:translate(-50%,0);}
+.pos-2{position:absolute; left:50%;transform:translate(-50%,0);}
+.pos-3{position:absolute; left:50%;transform:translate(-50%,0); display: grid;}

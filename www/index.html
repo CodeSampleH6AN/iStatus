@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>iStatus</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h1>
+      <img class="img-main" src="resources/logo.png" height="36" width="36">Status</h1>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- VRIJEME CIKLUSA -->
+  <div class="pos-1">
+    <div class="js-spinner container-1">
+      <button spinner-button="down">
+        <svg width="32" height="32">
+          <rect width="32" height="32" ry="0" style="fill:#353535;fill-opacity:1;" />
+          <rect x="10" y="15" width="12" height="2" ry="0" style="fill:#fed25a;fill-opacity:1;" />
+        </svg>
+      </button>
+
+      <input name="num1" id="num1" class="enjoy-input-3 js-stepper" type="number" step="0.1" min="0" data-stepper-debounce="400"
+        placeholder="Vrijeme ciklusa" />
+
+      <button spinner-button="up">
+        <svg width="32" height="32">
+          <rect width="32" height="32" ry="0" style="fill:#353535;fill-opacity:1;" />
+          <rect x="15" y="10" width="2" height="12" ry="0" style="fill:#fed25a;fill-opacity:1;" />
+          <rect x="10" y="15" width="12" height="2" ry="0" style="fill:#fed25a;fill-opacity:1;" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- VREMENSKI PERIOD -->
+  <div class="pos-2">
+    <div class="js-spinner container-2">
+      <button spinner-button="down">
+        <svg width="32" height="32">
+          <rect width="32" height="32" ry="0" style="fill:#353535;fill-opacity:1;" />
+          <rect x="10" y="15" width="12" height="2" ry="0" style="fill:#fed25a;fill-opacity:1;" />
+        </svg>
+      </button>
+
+      <input name="num2" id="num2" class="enjoy-input-3 js-stepper" type="number" step="1.0" min="0" data-stepper-debounce="400"
+        placeholder="Vremenski period" />
+
+      <button spinner-button="up">
+        <svg width="32" height="32">
+          <rect width="32" height="32" ry="0" style="fill:#353535;fill-opacity:1;" />
+          <rect x="15" y="10" width="2" height="12" ry="0" style="fill:#fed25a;fill-opacity:1;" />
+          <rect x="10" y="15" width="12" height="2" ry="0" style="fill:#fed25a;fill-opacity:1;" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- BRIZGANJA + -->
+  <div class="pos-3">
+    <label class="enjoy-input"> Brizganja +
+    </label>
+    <input name="result" id="result" class="enjoy-input-2" type="number" readonly />
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- TRENUTNO STANJE -->
+  <div class="pos-3">
+    <label class="enjoy-input"> Trenutno stanje
+    </label>
+    <input id="num0" class="enjoy-input-2" type="number" />
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- POCETNO STANJE -->
+  <div class="pos-3">
+    <label class="enjoy-input"> Po&#269;etno stanje
+    </label>
+    <input id="num3" class="enjoy-input-2" type="number" />
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- KRAJNJE STANJE -->
+  <div class="pos-3">
+    <label class="enjoy-input"> Krajnje stanje
+    </label>
+    <input id="result2" class="enjoy-input-2" type="number" />
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- BROJ BRIZGANJA -->
+  <div class="pos-3">
+    <label class="enjoy-input"> Broj brizganja
+    </label>
+    <input name="result3" id="result3" class="enjoy-input-2" type="number" readonly />
+  </div>
+
+  <a href="" onclick="
+    document.getElementById('input').value = '';">
+    <img src="resources/clear.png" heigth="26" width="26" id="clear"> </a>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/stepper.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/no_character.js"></script>
+
+</body>
+
+</html>
