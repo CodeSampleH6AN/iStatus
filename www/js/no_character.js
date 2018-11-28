@@ -14,4 +14,7 @@ $('html').bind('keypress', function (e) {
     if (e.keyCode == 190) {
         return false;
     }
+    if (e.KEYCODE_MINUS = 69) {
+        return false;
+    }
 });
