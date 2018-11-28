@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cstatus.h6an" version="14.01.18" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>CStatus</name>
+    <name>iStatus</name>
     <description>
-        Calculates a number of injections .
+        Calculates a number of injections.
     </description>
     <author email="support@phonegap.com" href="">
 CodeSampleH6AN
