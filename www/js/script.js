@@ -46,3 +46,4 @@ function diff3() {
     document.getElementById('result3').value = result3.toFixed(0);
   }
 }
+
