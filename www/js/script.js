@@ -12,6 +12,9 @@ $(document).ready(function() {
   $(" #num0, #num1, #num2, #num3").on("keydown keyup change", function() {
     diff3();
   });
+  $(" #num0, #num1, #num0, #num3").on("keydown keyup change", function() {
+    diff4();
+  });
 });
 
 function diff() {
@@ -42,6 +45,24 @@ function diff3() {
   var result = parseFloat(num2) * 60 / parseFloat(num1);
   var result2 = parseFloat(result) + parseFloat(num0);
   var result3 = parseFloat(result2) - parseFloat(num3);
+  if (!isNaN(result3)) {
+    document.getElementById('result3').value = result3.toFixed(0);
+  }
+
+}
+
+function diff4() {
+  var num1 = document.getElementById('num1').value;
+  var num2 = document.getElementById('num2').value;
+  var num0 = document.getElementById('num0').value;
+  var num3 = document.getElementById('num3').value;
+  var result = parseFloat(num2) * 60 / parseFloat(num1);
+  if (num1 === ""){var result = document.getElementById('result').value = 0;}
+  if (num2 === ""){var result = document.getElementById('result').value = 0;}
+  var result2 = parseFloat(result) + parseFloat(num0);
+  var result3 = parseFloat(result2) - parseFloat(num3);
+  if (!isNaN(result2)) {
+    document.getElementById('result2').value = result2.toFixed(0);}
   if (!isNaN(result3)) {
     document.getElementById('result3').value = result3.toFixed(0);
   }
